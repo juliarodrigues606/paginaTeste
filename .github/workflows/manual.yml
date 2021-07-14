@@ -1,17 +1,5 @@
 # This is a basic workflow that is manually triggered
-
-name: Manual workflow
-
-# Controls when the action will run. Workflow runs when manually triggered using the UI
-# or API.
-on:
-  push:
-    branches: [ source ]
-  pull_request:
-    branches: [ source ]
-  workflow_dispatch:
-
-  # Allows external webhook trigger
-  repository_dispatch:
-    types:
-      - webhook
+name: Invoke deployment hook
+      uses: distributhor/workflow-webhook@v1
+      env:
+        webhook_url: ${{ secrets.https://hooks.slack.com/services/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 }}
