@@ -4,3 +4,5 @@ name: Invoke deployment hook
 uses: distributhor/workflow-webhook@v1
  env:
     webhook_url: ${{ secrets.https://hooks.slack.com/services/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 }}
+    webhook_secret: ${{ secrets.4f6d013e3db0f80ffc0baf1538f057d9 }}
+    
