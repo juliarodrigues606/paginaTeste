@@ -1,6 +1,6 @@
 # This is a basic workflow that is manually triggered
 
-name: Workflow Webhook Action
+name: Invoke deployment hook
 uses: distributhor/workflow-webhook@v1
-  env:
-    webhook_url: ${{ secrets.https://hooks.slack.com/services/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 }}
+ env:
+    webhook_url: ${{ secrets.https://hooks.slack.com/services/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 }}
